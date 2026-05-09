@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body{
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.active-link{
+    text-decoration: underline;
+}
+
+/* .pasteBox{
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+} */
