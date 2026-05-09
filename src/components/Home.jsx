@@ -88,7 +88,7 @@ const Home = () => {
                               style: { fontSize: '15px' },
                             })  }}
         > 
-            <img src="../public/copy-svgrepo-com.svg" alt="" 
+            <img src="/copy-svgrepo-com.svg" alt="" 
             className='h-6 w-6 '/>
             
         </button>
