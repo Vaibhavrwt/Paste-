@@ -5,7 +5,7 @@ import { addToPaste, updateToPaste } from '../redux/pasteSlice';
 import toast from 'react-hot-toast';
 
 const Home = () => {
-
+    
     const [title , setTitle] = useState('');
     const [value , setValue] = useState('');
     const [searchParams , setSearchParams] = useSearchParams();
@@ -88,8 +88,9 @@ const Home = () => {
                               style: { fontSize: '15px' },
                             })  }}
         > 
-            <img src="../src/assets/copied-icon.png" alt="" 
+            <img src="../public/copy-svgrepo-com.svg" alt="" 
             className='h-6 w-6 '/>
+            
         </button>
         <textarea 
           className='mt-4 p-4 w-[600px] rounded-2xl text-[1rem] bg-blue-950 text-white

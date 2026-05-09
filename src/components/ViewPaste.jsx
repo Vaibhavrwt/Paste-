@@ -36,7 +36,7 @@ const ViewPaste = () => {
                               style: { fontSize: '15px' },
                             })  }}
         > 
-            <img src="../src/assets/copied-icon.png" alt="" 
+            <img src="../public/copy-svgrepo-com.svg" alt="" 
             className='h-6 w-6 '/>
         </button>
         <textarea 
