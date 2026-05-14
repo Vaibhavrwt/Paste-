@@ -63,16 +63,18 @@ const Home = () => {
 
     <div className='flex flex-col justify-center items-center '>
 
-      <div className='flex flex-row justify-center w-full items-center gap-4 mt-4'>
-        <input className='p-2 pl-4 rounded-2xl flex flex-row justify-center bg-blue-950 text-white
-          my-2 text-[1rem] w-[60%] placeholder:text-gray-500 placeholder:text-[0.9rem] focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none'
+      <div className='flex flex-col justify-center w-[100vw] items-center gap-4 mt-4 md:flex-row md:w-full'>
+        <input className='p-2 pl-4 rounded-md flex flex-row justify-center bg-white text-black
+          my-2 text-[1rem] w-[60%] placeholder:text-gray-500 placeholder:text-[0.9rem] focus:border-gray-600 focus:ring-1 focus:ring-gray-600 focus:outline-none 
+          transition-all duration-200 max-md:w-[80%]'
           type="text"
           placeholder='Title'
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           />
 
-        <button className='p-2 rounded-2xl bg-blue-950 text-white text-[0.9rem] w-[12%] h-10 hover:bg-gray-300 hover:text-black transition-all duration-200 cursor-pointer font-bold'
+        <button className='p-2 rounded-md bg-white text-black text-[0.9rem] w-[12%] h-10 hover:bg-gray-500 hover:text-white transition-all duration-200 cursor-pointer font-bold
+        max-md:w-[30%]'
           onClick={createPaste}>
             {pasteId ? "Update" : "Create"}
         </button>
@@ -80,7 +82,7 @@ const Home = () => {
 
       <div className='relative mt-4'>
         <button 
-          className='absolute -top-[20px] right-1 p-1 rounded-2xl  text-white text-[0.9rem] hover:bg-white hover:text-black transition-all duration-200 cursor-pointer font-bold '
+          className='absolute -top-[20px] right-1 p-1 rounded-md  text-white text-[0.9rem]  hover:text-white transition-all duration-200 cursor-pointer font-bold '
 
           onClick={() => {navigator.clipboard.writeText(value)
                             toast.success("Copied To Clipboard",{
@@ -93,9 +95,8 @@ const Home = () => {
             
         </button>
         <textarea 
-          className='mt-4 p-4 w-[600px] rounded-2xl text-[1rem] bg-blue-950 text-white
-           placeholder:text-gray-500 
-             focus:outline-none focus:shadow-blue-300 focus:shadow-[0px_10px_40px_rgba(59,130,246,0.5)] transition-all duration-200'
+          className='mt-4 p-4 w-[600px] rounded-md text-[1rem] bg-white text-black
+           placeholder:text-gray-500 focus:border-gray-600 focus:ring-1 focus:ring-gray-600 focus:outline-none transition-all duration-200 max-md:w-[350px] max-md:mx-auto'
           placeholder='Paste Content'
           value={value}
           onChange={(e) => setValue(e.target.value)}

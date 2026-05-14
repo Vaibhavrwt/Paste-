@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className='flex flex-row justify-around font-bold text-[1.5rem] '>
+    <div className='flex flex-row justify-around font-bold text-[1.5rem] text-black'>
       <NavLink to={"/"}
       className={({ isActive }) => isActive ? 'active-link' : 'link'}>
         Home

@@ -16,8 +16,8 @@ const ViewPaste = () => {
 
       <div className='flex flex-row justify-center w-full items-center gap-4 mt-4'>
         <input 
-          className='p-2 pl-4 rounded-2xl flex flex-row justify-center bg-blue-950 text-white
-          my-2 text-[1rem] w-[70%] placeholder:text-gray-500 placeholder:text-[0.9rem] focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none'
+          className='p-2 pl-4 rounded-md flex flex-row justify-center bg-white text-black
+          my-2 text-[1rem] w-[70%] max-md:w-[80%]'
           type="text"
           value={paste ? paste.title : ''}
           disabled
@@ -29,7 +29,7 @@ const ViewPaste = () => {
 
       <div className='relative mt-4'>
         <button 
-          className='absolute -top-[20px] right-1 p-1 rounded-2xl  text-white text-[0.9rem] hover:bg-white hover:text-black transition-all duration-200 cursor-pointer font-bold '
+          className='absolute -top-[20px] right-1 p-1 rounded-2xl  text-white text-[0.9rem]  transition-all duration-200 cursor-pointer font-bold '
 
           onClick={() => {navigator.clipboard.writeText(paste ? paste.content : '')
                             toast.success("Copied To Clipboard",{
@@ -41,9 +41,9 @@ const ViewPaste = () => {
             className='h-6 w-6 '/>
         </button>
         <textarea 
-          className='mt-4 p-4 w-[600px] rounded-2xl text-[1rem] bg-blue-950 text-white
+          className='mt-4 p-4 w-[600px] rounded-2xl text-[1rem] bg-white text-black
            placeholder:text-gray-500 
-             focus:outline-none focus:shadow-blue-300 focus:shadow-[0px_10px_40px_rgba(59,130,246,0.5)] transition-all duration-200 cursor-not-allowed'
+             focus:outline-none focus:shadow-blue-300 focus:shadow-[0px_10px_40px_rgba(59,130,246,0.5)] transition-all duration-200 cursor-not-allowed max-md:w-[350px] max-md:mx-auto'
             
           value={paste ? paste.content : ''}
           disabled
