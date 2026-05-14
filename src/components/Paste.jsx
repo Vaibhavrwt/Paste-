@@ -85,7 +85,7 @@ const Paste = () => {
                               <Link to={`/?pasteId=${paste?._id}`}>
                                 {/* EDIT */}
                                 <PencilLine
-                                  className="max-md:size-3"
+                                  className="max-md:size-4"
                                   size={15}
                                 />
 
@@ -100,7 +100,7 @@ const Paste = () => {
                                 <Link to={`/pastes/${paste?._id}`}>
                                   {/* VIEW */}
                                   <Eye
-                                    className='max-md:size-3'
+                                    className='max-md:size-4'
                                     size={15}
                                   />
                                 </Link>
@@ -112,7 +112,7 @@ const Paste = () => {
                               onClick={() => handleDelete(paste?._id)}>
                                 {/* DELETE */}
                               <Trash2
-                                className='max-md:size-3'
+                                className='max-md:size-4'
                                 size={15}
                               />
                             </button>
@@ -127,7 +127,7 @@ const Paste = () => {
                                   })  }}> 
                                 {/* COPY */}
                                 <Copy
-                                  className='max-md:size-3'
+                                  className='max-md:size-4'
                                   size={15}
                                 />
                             </button>
@@ -138,14 +138,14 @@ const Paste = () => {
                               onClick={() => handleCopy(paste)}>
                                 {/* SHARE */}
                                 <Share
-                                  className='max-md:size-3'
+                                  className='max-md:size-4'
                                   size={15}
                                 />
                             </button>
                         </div>
 
                         <div className="gap-x-1 flex justify-start items-center text-[1rem] mt-4 font-bold 
-                         text-black max-md:text-[0.7rem]">
+                         text-black max-md:text-[0.8rem]">
                             <Calendar className="text-black max-md:size-3"
                              size={20} />
                             {FormatDate(paste?.createdAt)}
