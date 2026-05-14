@@ -18,7 +18,7 @@ export const pasteSlice = createSlice({
         state.pastes.push(paste);
         localStorage.setItem("pastes",JSON.stringify(state.pastes));
         toast.success("Paste Created",{
-          position:"bottom-center",
+          position:"top-center",
           style: { fontSize: '15px' },
         })
     },
@@ -31,7 +31,7 @@ export const pasteSlice = createSlice({
           state.pastes[index] = paste;
           localStorage.setItem("pastes" , JSON.stringify(state.pastes));
           toast.success("Paste Updated",{
-          position:"bottom-center",
+          position:"top-center",
           style: { fontSize: '15px' },
         });
         }
@@ -51,7 +51,7 @@ export const pasteSlice = createSlice({
           state.pastes.splice(index, 1);
           localStorage.setItem("pastes", JSON.stringify(state.pastes));
           toast.success("Paste Deleted",{
-          position:"bottom-center",
+          position:"top-center",
           style: { fontSize: '15px' },
         });
       }

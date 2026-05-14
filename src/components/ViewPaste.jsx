@@ -33,7 +33,7 @@ const ViewPaste = () => {
 
           onClick={() => {navigator.clipboard.writeText(paste ? paste.content : '')
                             toast.success("Copied To Clipboard",{
-                              position:"bottom-center",
+                              position:"top-center",
                               style: { fontSize: '15px' },
                             })  }}
         > 
@@ -43,7 +43,7 @@ const ViewPaste = () => {
         <textarea 
           className='mt-4 p-4 w-[600px] rounded-2xl text-[1rem] bg-white text-black
            placeholder:text-gray-500 
-             focus:outline-none focus:shadow-blue-300 focus:shadow-[0px_10px_40px_rgba(59,130,246,0.5)] transition-all duration-200 cursor-not-allowed max-md:w-[350px] max-md:mx-auto'
+             focus:outline-none focus:shadow-blue-300 focus:shadow-[0px_10px_40px_rgba(59,130,246,0.5)] transition-all duration-200 cursor-not-allowed max-md:w-[90vw] max-md:mx-auto'
             
           value={paste ? paste.content : ''}
           disabled

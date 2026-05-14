@@ -41,7 +41,7 @@ const Home = () => {
       }
       else{
           toast.error("Please fill in all fields.",{
-              position:"bottom-center",
+              position:"top-center",
               style: { fontSize: '15px' },
           });
           setTitle(title);
@@ -86,7 +86,7 @@ const Home = () => {
 
           onClick={() => {navigator.clipboard.writeText(value)
                             toast.success("Copied To Clipboard",{
-                              position:"bottom-center",
+                              position:"top-center",
                               style: { fontSize: '15px' },
                             })  }}
         > 
@@ -96,7 +96,7 @@ const Home = () => {
         </button>
         <textarea 
           className='mt-4 p-4 w-[600px] rounded-md text-[1rem] bg-white text-black
-           placeholder:text-gray-500 focus:border-gray-600 focus:ring-1 focus:ring-gray-600 focus:outline-none transition-all duration-200 max-md:w-[350px] max-md:mx-auto'
+           placeholder:text-gray-500 focus:border-gray-600 focus:ring-1 focus:ring-gray-600 focus:outline-none transition-all duration-200 max-md:w-[90vw] max-md:mx-auto'
           placeholder='Paste Content'
           value={value}
           onChange={(e) => setValue(e.target.value)}
