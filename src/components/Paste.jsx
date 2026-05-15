@@ -144,8 +144,8 @@ const Paste = () => {
                             </button>
                         </div>
 
-                        <div className="gap-x-1 flex justify-start items-center text-[1rem] mt-4 font-bold 
-                         text-black max-md:text-[0.8rem]">
+                        <div className="gap-x-1 flex justify-start items-center text-[0.9rem] mt-4 font-bold 
+                         text-black max-md:text-[0.7rem]">
                             <Calendar className="text-black max-md:size-3"
                              size={20} />
                             {FormatDate(paste?.createdAt)}

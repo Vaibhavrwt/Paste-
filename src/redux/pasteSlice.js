@@ -15,7 +15,7 @@ export const pasteSlice = createSlice({
 
     addToPaste: (state,action) => {
         const paste = action.payload;
-        state.pastes.push(paste);
+        state.pastes.unshift(paste);
         localStorage.setItem("pastes",JSON.stringify(state.pastes));
         toast.success("Paste Created",{
           position:"top-center",

@@ -13,7 +13,14 @@ export const FormatDate = (date) => {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
+    
   }).format(_date);
 
-  return formattedDate;
+  const formattedTime = _date.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
+  });
+
+  return `${formattedDate} , ${formattedTime}`;
 };
